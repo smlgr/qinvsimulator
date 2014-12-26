@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core
+QT       += core network
 
 QT       -= gui
 
@@ -15,4 +15,10 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    qinvsimulator.cpp
+
+HEADERS += \
+    qinvsimulator.hpp
+
+QMAKE_CXXFLAGS += -std=c++0x
